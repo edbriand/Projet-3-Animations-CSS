@@ -1,0 +1,15 @@
+{
+  "name": "projet-3-animations-css",
+  "version": "1.0.0",
+  "description": "openclassrooms web dev course's third project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eddy Briand",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1"
+  }
+}
