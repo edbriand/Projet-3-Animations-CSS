@@ -12,7 +12,6 @@
   "devDependencies": {
     "live-server": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
