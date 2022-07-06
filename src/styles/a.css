@@ -1,0 +1,8 @@
+.container {
+  color: red;
+
+  &:hover {
+    color: yellow;
+    margin: 10px;
+  }
+}
