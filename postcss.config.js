@@ -1,7 +1,9 @@
 module.exports = {
+  syntax: "postcss-scss",
   plugins: [
     require("postcss-import"),
-    require("postcss-nesting"),
+    require("postcss-nested"),
+    require("stylelint"),
     require("autoprefixer"),
   ],
 };

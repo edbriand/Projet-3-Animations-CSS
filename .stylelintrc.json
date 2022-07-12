@@ -1,11 +1,3 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
-
-  "plugins": ["stylelint-use-nesting"],
-  "rules": {
-    "selector-nested-pattern": "^&",
-    "selector-max-compound-selectors": 5,
-    "max-nesting-depth": 3,
-    "csstools/use-nesting": "always"
-  }
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
 }
