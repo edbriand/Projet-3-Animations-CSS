@@ -1,8 +1,11 @@
-.container {
-  color: red;
+h1 {
+  color: black;
+
+  & .title {
+    color: red;
+  }
 
   &:hover {
-    color: yellow;
-    margin: 10px;
+    color: black;
   }
 }
