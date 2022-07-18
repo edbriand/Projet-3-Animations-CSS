@@ -1,5 +1,7 @@
-@import 'colors.css';
+@import "colors.pcss";
 
-@import 'normalize.css';
+@import "normalize.pcss";
 
-@import 'a.css';
+@import "fonts.pcss";
+
+@import "navbar.pcss";
