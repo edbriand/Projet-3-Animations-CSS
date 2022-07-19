@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="index.css" rel="stylesheet" />
     <title>Ohmyfood</title>
   </head>
@@ -33,19 +40,25 @@
         <div class="hiw">
           <h3>Fonctionnement</h3>
           <div class="hiw-card">
-            <div class="hiw-card__number">1</div>
-            <i class="hiw-card__icon"></i>
-            Choisissez un restaurant
+            <div class="hiw-card__container">
+              <div class="hiw-card__number">1</div>
+              <i class="hiw-card__icon fa-solid fa-mobile-screen-button"></i>
+              <p class="hiw-card__text">Choisissez un restaurant</p>
+            </div>
           </div>
           <div class="hiw-card">
-            <div class="hiw-card__number">2</div>
-            <i class="hiw-card__icon"></i>
-            Composez votre menu
+            <div class="hiw-card__container">
+              <div class="hiw-card__number">2</div>
+              <i class="hiw-card__icon fa-solid fa-list"></i>
+              <p class="hiw-card__text">Composez votre menu</p>
+            </div>
           </div>
-          <div class="hiw-card">
-            <div class="hiw-card__number">3</div>
-            <i class="hiw-card__icon"></i>
-            <p class="hiw-card__text">Dégustez au restaurant</p>
+          <div class="hiw-card hiw-card--accent">
+            <div class="hiw-card__container">
+              <div class="hiw-card__number">3</div>
+              <i class="hiw-card__icon--accent fa-solid fa-store"></i>
+              <p class="hiw-card__text">Dégustez au restaurant</p>
+            </div>
           </div>
         </div>
       </section>
