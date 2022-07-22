@@ -19,7 +19,8 @@
   transition: transform 250ms cubic-bezier(0, 1, 0.8, 1),
     box-shadow 250ms cubic-bezier(0, 1, 0.8, 1);
 
-  &__bg {
+  &::after {
+    content: "";
     position: absolute;
     inset: 0;
     background-color: var(--color-bg);
@@ -33,7 +34,7 @@
     transform: scale(1.06);
 
     /* stylelint-disable-next-line selector-class-pattern */
-    .btn-primary__bg {
+    &::after {
       opacity: 0.2;
     }
   }
