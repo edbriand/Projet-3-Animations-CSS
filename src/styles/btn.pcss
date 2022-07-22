@@ -26,6 +26,7 @@
 }
 
 .like-btn {
+  padding: 0;
   position: relative;
   background-color: transparent;
   border: none;
@@ -34,7 +35,8 @@
   &::after {
     display: block;
     position: absolute;
-    text-align: center;
+    top: 0;
+    left: 0;
     content: "\f004";
     font: var(--fa-font-solid);
     font-weight: 900;
@@ -45,6 +47,7 @@
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    transition: all 0.25s ease-in-out;
   }
 
   &::after {
@@ -55,12 +58,18 @@
     );
     background-clip: text;
     color: transparent;
-    transition: all 0.5s;
-    transform: scale(1, 0);
+    transition: all 0.5s cubic-bezier(0.19, 0.12, 0.44, 1.01);
+    clip-path: polygon(0 95%, 100% 95%, 100% 100%, 0% 100%);
     transform-origin: bottom;
   }
 
-  &:hover::after {
-    transform: scale(1, 1);
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 }
