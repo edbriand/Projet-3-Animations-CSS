@@ -23,10 +23,17 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--color-bg);
+    background: radial-gradient(
+      circle,
+      var(--color-bg) 0%,
+      var(--color-secondary) 70%,
+      var(--color-primary) 100%
+    );
+
+    /* background-color: var(--color-bg); */
     border-radius: 25px;
     opacity: 0;
-    transition: all 200ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
   }
 
   &:hover {
@@ -41,7 +48,7 @@
 }
 
 .like-btn {
-  --anim-time: 0.5s;
+  --anim-time: 500ms;
 
   padding: 0;
   position: relative;
