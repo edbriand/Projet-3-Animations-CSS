@@ -16,8 +16,8 @@
   border: none;
   border-radius: 25px;
   box-shadow: 0 5px 5px #dad9d9;
-  transition: transform 250ms cubic-bezier(0, 1, 0.8, 1),
-    box-shadow 250ms cubic-bezier(0, 1, 0.8, 1);
+  transition: transform 200ms cubic-bezier(0, 1, 0.8, 1),
+    box-shadow 200ms cubic-bezier(0, 1, 0.8, 1);
 
   &::after {
     content: "";
@@ -31,7 +31,7 @@
     );
     border-radius: 25px;
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
   }
 
   &:hover {
@@ -46,7 +46,7 @@
 }
 
 .like-btn {
-  --anim-time: 500ms;
+  --anim-time: 600ms;
 
   padding: 0;
   position: relative;
@@ -68,7 +68,7 @@
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    transition: all calc(var(--anim-time) / 2) ease-in-out;
+    transition: all calc((var(--anim-time) -100ms) / 2) ease-in-out;
   }
 
   &::after {
@@ -79,7 +79,8 @@
     );
     background-clip: text;
     color: transparent;
-    transition: clip-path var(--anim-time) cubic-bezier(0.19, 0.12, 0.44, 1.01);
+    transition: clip-path calc(var(--anim-time) - 100ms)
+      cubic-bezier(0.19, 0.12, 0.44, 1.01);
     clip-path: polygon(0 95%, 100% 95%, 100% 100%, 0% 100%);
     transform-origin: bottom;
   }
@@ -134,24 +135,24 @@
 
     &::after {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      animation: like-bounce calc(var(--anim-time) + 200ms);
+      animation: like-bounce var(--anim-time);
     }
 
     /* stylelint-disable-next-line selector-class-pattern */
     .like-btn__pop-left::before {
-      animation: like-pop-top-left calc(var(--anim-time) + 200ms);
+      animation: like-pop-top-left var(--anim-time);
     }
     /* stylelint-disable-next-line selector-class-pattern */
     .like-btn__pop-left::after {
-      animation: like-pop-bottom-left calc(var(--anim-time) + 200ms);
+      animation: like-pop-bottom-left var(--anim-time);
     }
     /* stylelint-disable-next-line selector-class-pattern */
     .like-btn__pop-right::before {
-      animation: like-pop-top-right calc(var(--anim-time) + 200ms);
+      animation: like-pop-top-right var(--anim-time);
     }
     /* stylelint-disable-next-line selector-class-pattern */
     .like-btn__pop-right::after {
-      animation: like-pop-bottom-right calc(var(--anim-time) + 200ms);
+      animation: like-pop-bottom-right var(--anim-time);
     }
   }
 }
