@@ -1,0 +1,51 @@
+footer {
+  padding: 20px 24px;
+  background-color: var(--color-dark-bg);
+  color: var(--color-bg);
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: 1.1em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+    font-size: 0.98em;
+    font-weight: 300;
+  }
+
+  a {
+    color: var(--color-bg);
+  }
+
+  ul .icon-text-duo {
+    font-weight: 400;
+
+    &::before {
+      display: inline-block;
+      width: 20px;
+      font: var(--fa-font-solid);
+      font-weight: 900;
+      font-size: 0.85em;
+      content: "";
+    }
+  }
+
+  ul #submit-res {
+    &::before {
+      content: "\f2e7";
+    }
+  }
+
+  ul #become-partner {
+    &::before {
+      content: "\f4c4";
+    }
+  }
+}
