@@ -1,6 +1,10 @@
 #restaurants {
   padding: 30px 20px 60px;
   background-color: var(--color-grey);
+
+  @media (min-width: 768px) {
+    padding: 30px 40px 60px;
+  }
 }
 
 .resto-container {
@@ -19,6 +23,7 @@
 
   @media (min-width: 768px) {
     flex-flow: row wrap;
+    gap: 30px;
   }
 }
 
@@ -29,7 +34,7 @@
   box-shadow: 0 4px 8px #00000020;
 
   @media (min-width: 768px) {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   &__img {

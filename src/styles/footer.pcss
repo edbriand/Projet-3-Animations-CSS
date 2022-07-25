@@ -1,14 +1,26 @@
 footer {
-  padding: 20px 24px;
+  padding: 20px 24px 30px;
   background-color: var(--color-dark-bg);
   color: var(--color-bg);
+
+  @media (min-width: 768px) {
+    padding: 30px 48px;
+  }
 
   h1 {
     margin: 0 0 16px;
     font-size: 1.1em;
   }
 
+  @media (min-width: 768px) {
+    .footer-container {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
   ul {
+    width: 40%;
     list-style-type: none;
     padding: 0;
     margin: 0;
