@@ -6,7 +6,7 @@
   margin: 15px auto;
   text-align: center;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   background: linear-gradient(
     to bottom right,
@@ -101,31 +101,36 @@
     background-color: var(--color-secondary);
     width: 4px;
     height: 10px;
+    border-radius: 2px;
     opacity: 0;
   }
 
+  --rotation: 45deg;
+  --y-offset: 11px;
+  --x-offset: 6px;
+
   &__pop-left::before {
-    bottom: 12px;
-    left: 8px;
-    transform: rotate(-45deg);
+    bottom: var(--y-offset);
+    left: calc(1.2 * var(--x-offset));
+    transform: rotate(calc(-1 * var(--rotation)));
   }
 
   &__pop-left::after {
-    bottom: 18px;
-    left: 8px;
-    transform: rotate(45deg);
+    bottom: calc(1.5 * var(--y-offset));
+    left: calc(1.2 * var(--x-offset));
+    transform: rotate(var(--rotation));
   }
 
   &__pop-right::before {
-    bottom: 12px;
-    left: 18px;
-    transform: rotate(45deg);
+    bottom: var(--y-offset);
+    left: calc(2.1 * var(--x-offset));
+    transform: rotate(var(--rotation));
   }
 
   &__pop-right::after {
-    bottom: 18px;
-    left: 18px;
-    transform: rotate(-45deg);
+    bottom: calc(1.5 * var(--y-offset));
+    left: calc(2.1 * var(--x-offset));
+    transform: rotate(calc(-1 * var(--rotation)));
   }
 
   &:hover {
