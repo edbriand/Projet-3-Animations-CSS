@@ -3,10 +3,23 @@
   background-color: var(--color-grey);
 }
 
+.resto-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    max-width: none;
+  }
+}
+
 .resto-card-container {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-flow: row wrap;
+  }
 }
 
 .resto-card {
@@ -14,6 +27,10 @@
   height: 250px;
   border-radius: 14px;
   box-shadow: 0 4px 8px #dad9d9;
+
+  @media (min-width: 768px) {
+    width: calc((100% - 20px) / 2);
+  }
 
   &__img {
     object-fit: cover;
@@ -68,10 +85,10 @@
     top: var(--position);
     right: var(--position);
     background-color: var(--color-tertiary);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 2px;
     font-size: 14px;
     font-weight: 500;
-    color: #008766;
+    color: #018867;
   }
 }

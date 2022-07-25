@@ -1,6 +1,13 @@
 .cta {
+  z-index: 2;
   padding: 36px 25px;
   background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    max-width: 460px;
+  }
 
   h3,
   p {
@@ -20,5 +27,18 @@
 
   .btn-primary {
     margin-top: 32px;
+  }
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    color: white;
+
+    h3 {
+      font-size: 1.7em;
+    }
+
+    p {
+      font-size: 1.25em;
+    }
   }
 }
