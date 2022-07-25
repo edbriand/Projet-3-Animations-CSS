@@ -1,0 +1,19 @@
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+
+  p {
+    font-size: 1.05em;
+    font-weight: 500;
+
+    &::before {
+      display: inline-block;
+      font: var(--fa-font-solid);
+      font-weight: 900;
+      content: "\f3c5";
+      margin-right: 16px;
+    }
+  }
+}

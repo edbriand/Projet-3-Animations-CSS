@@ -12,6 +12,8 @@
 
 @import "navbar.pcss";
 
+@import "location.pcss";
+
 @import "cta.pcss";
 
 @import "hiw.pcss";
