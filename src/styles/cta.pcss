@@ -7,6 +7,9 @@
 
   &__container {
     max-width: 460px;
+    @media (min-width: 768px) {
+      max-width: 600px;
+    }
   }
 
   h3,
@@ -23,22 +26,25 @@
   p {
     font-size: 1.16em;
     font-weight: 300;
+
+    @media (min-width: 768px) {
+      font-size: 1.25em;
+    }
   }
 
   .btn-primary {
     margin-top: 32px;
+
+    @media (min-width: 1278px) {
+      margin-top: 64px;
+    }
   }
 
   @media (min-width: 768px) {
+    width: 60%;
     background-color: transparent;
     color: white;
-
-    h3 {
-      font-size: 1.7em;
-    }
-
-    p {
-      font-size: 1.25em;
-    }
+    padding-right: 52px;
+    padding-left: 44px;
   }
 }
