@@ -1,27 +1,23 @@
-@import "colors.pcss";
+@import "./utilities/colors.pcss";
 
-@import "normalize.pcss";
+@import "./utilities/normalize.pcss";
 
-@import "fonts.pcss";
+@import "./utilities/fonts.pcss";
 
-/* elements */
+@import "./components/btn.pcss";
 
-@import "btn.pcss";
+@import "./components/navbar.pcss";
 
-/* blocks */
+@import "./components/location.pcss";
 
-@import "navbar.pcss";
+@import "./components/footer.pcss";
 
-@import "location.pcss";
+@import "./blocks/intro.pcss";
 
-@import "intro.pcss";
+@import "./components/cta.pcss";
 
-@import "cta.pcss";
+@import "./components/hiw.pcss";
 
-@import "hiw.pcss";
+@import "./blocks/restaurants.pcss";
 
-@import "restaurants.pcss";
-
-@import "menu.pcss";
-
-@import "footer.pcss";
+@import "./blocks/menu.pcss";
