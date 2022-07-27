@@ -1,7 +1,28 @@
 .menu {
   &__container {
+    position: relative;
+    bottom: 40px;
     background-color: var(--color-grey);
-    padding: ;
+    padding: 30px 15px;
+    border-radius: 40px 40px 0 0;
+
+    h1 {
+      margin-left: 5px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-weight: 300;
+
+      &::after {
+        content: "";
+        display: block;
+        background-color: var(--color-tertiary);
+        width: 40px;
+        height: 3px;
+        margin-top: 4px;
+      }
+    }
   }
 
   &__img {
@@ -12,10 +33,55 @@
     image-rendering: high-quality;
   }
 
-  .menu-item {
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    padding: 15px 0;
+  }
+}
+
+.menu-item {
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 20px;
+  height: 70px;
+  background-color: var(--color-bg);
+
+  &__content {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
-    border-radius: 20px;
-    background-color: var(--color-bg);
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 12px;
+  }
+
+  &__desc {
+    overflow: hidden;
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: 700;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      margin-top: 6px;
+      font-size: 1em;
+      font-weight: 300;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__price {
+    padding: 0 15px 0 10px;
+    font-size: 0.96em;
+    font-weight: 700;
+    align-self: flex-end;
   }
 }
