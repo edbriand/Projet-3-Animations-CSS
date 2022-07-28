@@ -1,14 +1,15 @@
 .menu {
+  background-color: var(--color-grey);
+
   &__container {
+    background-color: var(--color-grey);
     position: relative;
     bottom: 40px;
-    background-color: var(--color-grey);
     padding: 30px 15px;
     border-radius: 40px 40px 0 0;
 
     h1 {
       margin-left: 5px;
-      margin-bottom: 30px;
     }
 
     h2 {
@@ -39,6 +40,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-right: 10px;
+    margin-bottom: 15px;
 
     .like-btn {
       --y-offset: 12px;
@@ -48,6 +50,11 @@
       height: 28px;
       font-size: 28px;
     }
+  }
+
+  &__chapter {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   ul {
@@ -89,11 +96,15 @@
 
     p {
       margin-top: 6px;
-      font-size: 1em;
+      font-size: 0.96em;
       font-weight: 300;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+
+      strong {
+        font-weight: 500;
+      }
     }
   }
 
