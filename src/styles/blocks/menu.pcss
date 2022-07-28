@@ -13,6 +13,7 @@
 
     h2 {
       font-weight: 300;
+      margin-left: 5px;
 
       &::after {
         content: "";
@@ -47,10 +48,12 @@
   border-radius: 20px;
   height: 70px;
   background-color: var(--color-bg);
+  overflow: hidden;
 
   &__content {
     position: relative;
     display: flex;
+    flex: 1;
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
@@ -83,5 +86,40 @@
     font-size: 0.96em;
     font-weight: 700;
     align-self: flex-end;
+  }
+
+  &__check {
+    --check-anim-time: 600ms;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    transition: all var(--check-anim-time);
+    width: 0;
+    transform-origin: right;
+
+    &::before {
+      position: absolute;
+      content: "\f058";
+      font: var(--fa-font-solid);
+      font-size: 24px;
+      font-weight: 900;
+      left: 18px;
+      color: white;
+      transition: all var(--check-anim-time);
+      transform: rotate(-500deg);
+    }
+  }
+
+  &:hover {
+    /* stylelint-disable-next-line selector-class-pattern */
+    .menu-item__check {
+      width: 60px;
+
+      &::before {
+        transform: rotate(0deg);
+      }
+    }
   }
 }
