@@ -50,7 +50,12 @@
 
 .like-btn {
   --anim-time: 600ms;
+  --size: 24px;
 
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--size);
+  margin: 10px;
   padding: 0;
   position: relative;
   background-color: transparent;
@@ -110,29 +115,29 @@
 
   --rotation: 45deg;
   --y-offset: 11px;
-  --x-offset: 6px;
+  --x-offset: 7px;
 
   &__pop-left::before {
     bottom: var(--y-offset);
-    left: calc(1.2 * var(--x-offset));
+    left: calc(1 * var(--x-offset));
     transform: rotate(calc(-1 * var(--rotation)));
   }
 
   &__pop-left::after {
     bottom: calc(1.5 * var(--y-offset));
-    left: calc(1.2 * var(--x-offset));
+    left: calc(1 * var(--x-offset));
     transform: rotate(var(--rotation));
   }
 
   &__pop-right::before {
     bottom: var(--y-offset);
-    left: calc(2.1 * var(--x-offset));
+    left: calc(1.8 * var(--x-offset));
     transform: rotate(var(--rotation));
   }
 
   &__pop-right::after {
     bottom: calc(1.5 * var(--y-offset));
-    left: calc(2.1 * var(--x-offset));
+    left: calc(1.8 * var(--x-offset));
     transform: rotate(calc(-1 * var(--rotation)));
   }
 
@@ -189,7 +194,7 @@
 @keyframes like-pop-top-left {
   0%,
   80% {
-    transform: translate(0, 0) rotate(-45deg);
+    transform: translate(0, 0) rotate(calc(-1 * var(--rotation)));
     opacity: 0;
   }
 
@@ -206,7 +211,7 @@
 @keyframes like-pop-bottom-left {
   0%,
   80% {
-    transform: translate(0, 0) rotate(45deg);
+    transform: translate(0, 0) rotate(var(--rotation));
     opacity: 0;
   }
 
@@ -227,7 +232,7 @@
 @keyframes like-pop-top-right {
   0%,
   80% {
-    transform: translate(0, 0) rotate(45deg);
+    transform: translate(0, 0) rotate(var(--rotation));
     opacity: 0;
   }
 
@@ -240,7 +245,7 @@
   }
 
   100% {
-    transform: translate(20px, -20px) rotate(60deg);
+    transform: translate(18px, -20px) rotate(60deg);
     opacity: 0;
   }
 }
@@ -248,7 +253,7 @@
 @keyframes like-pop-bottom-right {
   0%,
   80% {
-    transform: translate(0, 0) rotate(-45deg);
+    transform: translate(0, 0) rotate(calc(-1 * var(--rotation)));
     opacity: 0;
   }
 
@@ -261,7 +266,7 @@
   }
 
   100% {
-    transform: translate(20px, 20px) rotate(-60deg);
+    transform: translate(18px, 20px) rotate(-60deg);
     opacity: 0;
   }
 }
