@@ -5,9 +5,73 @@
 }
 
 body {
+  --anim-time: 2s;
+
   margin: 0 auto;
   max-width: 1630px;
   background-color: var(--color-grey);
+
+  &.loading-anim {
+    nav,
+    main,
+    footer {
+      animation: loading-fade var(--anim-time);
+    }
+  }
+
+  &::before {
+    --size: 6vh;
+
+    display: block;
+    position: absolute;
+    content: "\f01e";
+    font: var(--fa-font-solid);
+    font-weight: 900;
+    font-size: var(--size);
+    top: calc(50% - (var(--size) / 2));
+    left: calc(50% - (var(--size) / 2));
+    background: linear-gradient(
+      to bottom right,
+      var(--color-secondary),
+      var(--color-primary)
+    );
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: loading-spin var(--anim-time) linear;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes loading-fade {
+  0%,
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading-spin {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  10%,
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(900deg);
+  }
 }
 
 ol,
