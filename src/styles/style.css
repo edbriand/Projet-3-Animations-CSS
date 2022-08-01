@@ -6,6 +6,8 @@
 
 @import "./components/btn.pcss";
 
+@import "./components/menu-item.pcss";
+
 @import "./components/navbar.pcss";
 
 @import "./components/location.pcss";
