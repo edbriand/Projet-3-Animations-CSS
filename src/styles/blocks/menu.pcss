@@ -59,9 +59,10 @@
   &__chapter-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 0 30px;
 
-    @media (min-height: 1150px) {
+    @media (min-height: 1150px) and (min-width: 992px) {
       margin-top: 80px;
       margin-bottom: 40px;
     }
@@ -71,6 +72,7 @@
     flex: 1;
     padding-top: 16px;
     padding-bottom: 16px;
+    max-width: 460px;
   }
 
   ul {
@@ -83,7 +85,7 @@
   .btn-primary {
     width: 190px;
 
-    @media (min-height: 1150px) {
+    @media (min-height: 1150px) and (min-width: 992px) {
       margin-bottom: 50px;
     }
   }
