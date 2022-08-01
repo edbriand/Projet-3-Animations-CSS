@@ -1,4 +1,6 @@
 .menu {
+  --gap: 30px;
+
   background-color: var(--color-grey);
 
   &__container {
@@ -59,8 +61,8 @@
   &__chapter-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 0 30px;
+    justify-content: space-around;
+    gap: 0 var(--gap);
 
     @media (min-height: 1150px) and (min-width: 992px) {
       margin-top: 80px;
@@ -69,10 +71,21 @@
   }
 
   &__chapter {
-    flex: 1;
     padding-top: 16px;
     padding-bottom: 16px;
     max-width: 460px;
+    overflow: hidden;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+      width: calc((100% / 2) - (var(--gap) / 2));
+    }
+
+    @media (min-width: 1278px) {
+      width: calc((100% / 3) - (var(--gap) * 2 / 3));
+    }
   }
 
   ul {
