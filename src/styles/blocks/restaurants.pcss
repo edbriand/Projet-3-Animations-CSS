@@ -46,6 +46,7 @@
   border-radius: 14px;
   box-shadow: 0 4px 8px #00000020;
   color: black;
+  transition: all 100ms;
 
   @media (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -104,5 +105,9 @@
     font-size: 14px;
     font-weight: 500;
     color: #018867;
+  }
+
+  &:hover {
+    transform: scale(1.03);
   }
 }
