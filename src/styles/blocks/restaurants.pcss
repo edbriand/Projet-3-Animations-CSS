@@ -45,7 +45,7 @@
   height: 250px;
   border-radius: 14px;
   box-shadow: 0 4px 8px #00000020;
-  color: black;
+  color: var(--color-fg);
   transition: all 100ms;
 
   @media (min-width: 768px) {
@@ -104,10 +104,14 @@
     border-radius: 2px;
     font-size: 14px;
     font-weight: 500;
-    color: #018867;
+    color: var(--pinegreen);
   }
 
   &:hover {
     transform: scale(1.03);
   }
+}
+
+.dark .resto-card {
+  background-color: var(--darkgrey);
 }

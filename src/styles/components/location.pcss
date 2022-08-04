@@ -4,7 +4,7 @@
   justify-content: center;
   position: relative;
   height: 50px;
-  background-color: #eaeaea;
+  background-color: var(--color-grey);
 
   p {
     z-index: 2;
@@ -12,6 +12,7 @@
     font-weight: 500;
     margin-top: auto;
     margin-bottom: auto;
+    color: var(--color-fg);
 
     &::before {
       display: inline-block;
@@ -25,7 +26,7 @@
   @media (min-width: 768px) {
     background-color: transparent;
     position: relative;
-    color: white;
+    color: var(--white);
 
     /* &::before {
       content: "";

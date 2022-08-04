@@ -10,7 +10,7 @@
   text-align: center;
   font-size: 1em;
   font-weight: 400;
-  color: white;
+  color: var(--white);
   background: linear-gradient(
     to bottom right,
     var(--btn-color-secondary),
@@ -28,7 +28,7 @@
     inset: 0;
     background: radial-gradient(
       circle,
-      var(--color-bg) 0%,
+      var(--white) 0%,
       var(--color-secondary) 70%,
       var(--color-primary) 100%
     );
@@ -75,7 +75,7 @@
     color: transparent;
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: var(--color-fg);
     transition: all calc((var(--anim-time) -100ms) / 2) ease-in-out;
   }
 
