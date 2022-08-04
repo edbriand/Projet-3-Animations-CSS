@@ -86,9 +86,17 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.dark .hiw-card--accent {
-  /* stylelint-disable-next-line selector-class-pattern */
-  & .hiw-card__icon {
-    color: var(--white);
+.dark .hiw-card {
+  background-color: var(--color-bg);
+  @media (min-width: 768px) {
+    background-color: var(--color-grey);
+  }
+
+  &--accent {
+    background-color: var(--color-primary);
+    /* stylelint-disable-next-line selector-class-pattern */
+    & .hiw-card__icon {
+      color: var(--white);
+    }
   }
 }
