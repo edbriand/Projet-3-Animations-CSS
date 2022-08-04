@@ -1,6 +1,13 @@
 .hiw {
-  margin: 46px 20px 70px;
+  padding: 46px 20px 70px;
   z-index: 2;
+  background-color: var(--color-bg);
+
+  @media (min-width: 768px) {
+    width: 40%;
+    margin: 46px auto 70px;
+    background-color: transparent;
+  }
 
   &__container {
     max-width: 500px;
@@ -20,11 +27,6 @@
       color: var(--white);
     }
   }
-
-  @media (min-width: 768px) {
-    width: 40%;
-    margin: 46px auto 70px;
-  }
 }
 
 .hiw-card {
@@ -33,7 +35,7 @@
   align-items: center;
   height: 75px;
   margin: 20px auto 20px 12px;
-  background-color: var(--color-grey);
+  background-color: var(--color-secondary-bg);
   color: var(--color-fg);
   font-weight: 900;
   border-radius: 20px;
@@ -87,13 +89,17 @@
 
 /* stylelint-disable-next-line selector-class-pattern */
 .dark .hiw-card {
-  background-color: var(--color-bg);
+  background-color: var(--color-secondary-bg);
   @media (min-width: 768px) {
-    background-color: var(--color-grey);
+    background-color: var(--color-secondary-bg);
   }
 
   &--accent {
-    background-color: var(--darkpurplegrey);
+    background-color: var(--color-primary-light);
+
+    @media (min-width: 768px) {
+      background-color: var(--purplegrey);
+    }
     /* stylelint-disable-next-line selector-class-pattern */
     & .hiw-card__icon {
       color: var(--white);
