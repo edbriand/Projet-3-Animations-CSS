@@ -5,13 +5,22 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "live-server src"
+    "dev": "concurrently --kill-others \"npm run postcss:watch\" \"npm run live\"",
+    "live": "live-server src",
+    "postcss:watch": "postcss src/styles/style.css -o src/index.css -w"
   },
   "author": "Eddy Briand",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
     "live-server": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-lit": "^0.4.3",
+    "postcss-nested": "^5.0.6",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
