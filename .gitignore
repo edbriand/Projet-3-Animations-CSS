@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # postcss output
-src/index.css
+docs/index.css

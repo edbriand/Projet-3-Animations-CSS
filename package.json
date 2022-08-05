@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently --kill-others \"npm run postcss:watch\" \"npm run live\"",
-    "live": "live-server src",
-    "postcss:watch": "postcss src/styles/style.css -o src/index.css -w"
+    "live": "live-server docs",
+    "postcss:watch": "postcss docs/styles/style.css -o docs/index.css -w"
   },
   "author": "Eddy Briand",
   "license": "ISC",
