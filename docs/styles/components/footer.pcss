@@ -1,15 +1,20 @@
 footer {
   flex-shrink: 0;
-  padding: 20px 24px 30px;
   background-color: var(--darkgrey);
   color: var(--white);
 
-  @media (min-width: 768px) {
-    padding: 30px 48px;
-  }
+  .footer-container {
+    max-width: 1630px;
+    margin: 0 auto;
+    padding: 20px 24px 30px;
 
-  @media (min-width: 1278px) {
-    padding: 30px 64px;
+    @media (min-width: 768px) {
+      padding: 30px 48px;
+    }
+
+    @media (min-width: 1278px) {
+      padding: 30px 64px;
+    }
   }
 
   h1 {
@@ -19,7 +24,7 @@ footer {
   }
 
   @media (min-width: 768px) {
-    .footer-container {
+    .footer-content {
       display: flex;
       flex-flow: row wrap;
     }
