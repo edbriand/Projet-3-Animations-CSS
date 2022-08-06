@@ -42,6 +42,9 @@ body {
 
 main {
   flex: 1 0 auto;
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
 }
 
 body {
@@ -49,10 +52,13 @@ body {
 
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  max-width: 1630px;
-  background-color: var(--color-secondary-bg);
+  background-color: var(--color-bg);
+  margin: 0;
 }
+
+body.loading-anim {
+    background-color: var(--color-secondary-bg);
+  }
 
 body.loading-anim nav,
     body.loading-anim main,
@@ -171,6 +177,14 @@ h6,
 p {
   margin: 0;
 }
+
+.dark body {
+  background-color: var(--darkpurple);
+}
+
+.dark body.loading-anim {
+    background-color: var(--color-secondary-bg);
+  }
 
 * {
   font-family: Roboto, sans-serif;
