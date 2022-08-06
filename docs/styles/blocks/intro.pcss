@@ -1,0 +1,34 @@
+#intro {
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url("../images/alex-haney-CAhjZmVk5H4-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.5;
+    }
+  }
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    position: relative;
+    bottom: 25px;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 40px 90px;
+  }
+}

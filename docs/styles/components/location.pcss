@@ -1,0 +1,42 @@
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+  background-color: var(--lightgrey);
+
+  p {
+    z-index: 2;
+    font-size: 1.05em;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--color-fg);
+
+    &::before {
+      display: inline-block;
+      font: var(--fa-font-solid);
+      font-weight: 900;
+      content: "\f3c5";
+      margin-right: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    position: relative;
+
+    p {
+      color: var(--white);
+    }
+  }
+}
+
+.dark .location {
+  background-color: var(--darkpurple);
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+  }
+}
