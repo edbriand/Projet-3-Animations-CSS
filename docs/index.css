@@ -318,7 +318,7 @@ h4 {
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--color-fg);
-    transition: all calc((var(--anim-time) -100ms) / 2) ease-in-out;
+    transition: all calc((var(--anim-time) - 100ms) / 2) ease-in-out;
   }
 
 .like-btn::after {
