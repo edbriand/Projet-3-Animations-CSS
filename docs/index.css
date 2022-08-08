@@ -1,18 +1,19 @@
 :root {
   --purple: #9356dc;
-  --purple2: #2a162a;
+  --purple2: #462a67;
   --lightpurple: #f5edff;
+  --irsten: #0c2461;
   --pink: #ff79da;
   --mintgreen: #99e2d0;
-  --pinegreen: #018867;
+  --pinegreen: #2a9479;
   --white: white;
   --offwhite: #f6f6f6;
   --lightgrey: #eaeaea;
   --darkgrey: #353535;
   --black: black;
-  --purplegrey: #2b2531;
-  --deeppurple: #1d141d;
-  --darkpurple: #181118;
+  --purplegrey: #271c31;
+  --deeppurple: #16131a;
+  --darkpurple: #100e14;
   --color-primary: var(--purple);
   --color-primary-light: var(--lightpurple);
   --color-secondary: var(--pink);
@@ -232,7 +233,7 @@ h3 {
 }
   }
 
-h5 {
+h4 {
   font-size: 1.1em;
   font-weight: 900;
 }
@@ -1351,7 +1352,7 @@ footer ul #become-partner::before {
     margin: 14px;
   }
 
-.resto-card__text h5 {
+.resto-card__text h4 {
       margin: 0;
     }
 
