@@ -25,10 +25,14 @@
 
 .dark {
   --color-bg: var(--purplegrey);
-  --color-fg: var(--white);
+  --color-fg: var(--offwhite);
   --color-secondary-bg: var(--deeppurple);
   --color-primary-light: var(--purple2);
 }
+
+.dark img {
+    filter: brightness(85%);
+  }
 
 *,
 *::before,
@@ -443,7 +447,7 @@ h4 {
 .like-btn {
 
   --rotation: 45deg;
-  --y-offset: 11px;
+  --y-offset: 0;
   --x-offset: 7px;
 }
 
@@ -1505,7 +1509,7 @@ footer ul #become-partner::before {
   }
 
 .menu__header .like-btn {
-      --y-offset: 12px;
+      --y-offset: 0;
       --x-offset: 9px;
 
       width: 28px;
