@@ -46,7 +46,13 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: "\f185";
+      font: var(--fa-font-solid);
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ccc;
+      text-align: center;
       height: 20px;
       width: 20px;
       left: 4px;
@@ -67,6 +73,8 @@
 
   input:checked + .slider::before {
     transform: translateX(22px);
+    color: var(--color-primary);
+    content: "\f186";
   }
 }
 
