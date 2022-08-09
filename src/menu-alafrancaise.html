@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,12 +19,17 @@
     />
     <link href="index.css" rel="stylesheet" />
     <title>Ohmyfood</title>
+    <script type="text/javascript" src="dark.js"></script>
   </head>
   <body>
     <nav class="navbar navbar--back">
       <div class="navbar-container">
-        <a class="navbar-btn" href="index.html"></a>
+        <a class="btn-back" href="index.html"></a>
         <h1>ohmyfood</h1>
+        <label class="btn-dark">
+          <input type="checkbox" onclick="toggleDark()" />
+          <span class="slider"></span>
+        </label>
       </div>
     </nav>
     <main>

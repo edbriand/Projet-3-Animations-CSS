@@ -10,40 +10,26 @@
   background-color: var(--color-bg);
 
   &--back {
-    .navbar-container {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      max-width: 1630px;
-
-      .navbar-btn {
-        position: absolute;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        margin: 15px;
-        color: var(--color-fg);
-
-        &::before {
-          display: inline-block;
-          font: var(--fa-font-solid);
-          font-size: 20px;
-          font-weight: 900;
-          content: "\f060";
-        }
-      }
+    .btn-back {
+      opacity: 1;
+      cursor: pointer;
     }
   }
 
   h1 {
     margin-top: 5px;
     margin-bottom: 0;
+    justify-items: center;
     color: var(--color-fg);
+  }
+
+  .navbar-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1630px;
   }
 }
