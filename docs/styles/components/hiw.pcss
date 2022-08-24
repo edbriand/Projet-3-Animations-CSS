@@ -40,6 +40,7 @@
   font-weight: 900;
   border-radius: 20px;
   box-shadow: 0 4px 8px #00000024;
+  transition: all 200ms;
 
   &__container {
     display: flex;
@@ -66,10 +67,6 @@
   &__icon {
     font-size: 18px;
     color: #7e7e7e;
-
-    &--accent {
-      color: var(--color-primary);
-    }
   }
 
   &__text {
@@ -77,12 +74,13 @@
     font-weight: 700;
   }
 
-  &--accent {
+  &:hover {
     background-color: var(--color-primary-light);
 
     /* stylelint-disable-next-line selector-class-pattern */
     & .hiw-card__icon {
       color: var(--color-primary);
+      font-size: 20px;
     }
   }
 }
@@ -94,7 +92,7 @@
     background-color: var(--color-secondary-bg);
   }
 
-  &--accent {
+  &:hover {
     background-color: var(--color-primary-light);
 
     @media (min-width: 768px) {

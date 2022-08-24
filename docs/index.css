@@ -1232,6 +1232,7 @@ footer ul #become-partner::before {
   font-weight: 900;
   border-radius: 20px;
   box-shadow: 0 4px 8px #00000024;
+  transition: all 200ms;
 }
 
 .hiw-card__container {
@@ -1261,23 +1262,20 @@ footer ul #become-partner::before {
     color: #7e7e7e;
   }
 
-.hiw-card__icon--accent {
-      color: var(--color-primary);
-    }
-
 .hiw-card__text {
     font-size: 1.04em;
     font-weight: 700;
   }
 
-.hiw-card--accent {
+.hiw-card:hover {
     background-color: var(--color-primary-light);
   }
 
 /* stylelint-disable-next-line selector-class-pattern */
 
-.hiw-card--accent .hiw-card__icon {
+.hiw-card:hover .hiw-card__icon {
       color: var(--color-primary);
+      font-size: 20px;
     }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -1293,20 +1291,20 @@ footer ul #become-partner::before {
 }
   }
 
-.dark .hiw-card--accent {
+.dark .hiw-card:hover {
     background-color: var(--color-primary-light);
   }
 
 @media (min-width: 768px) {
 
-.dark .hiw-card--accent {
+.dark .hiw-card:hover {
       background-color: var(--purplegrey)
   }
     }
 
 /* stylelint-disable-next-line selector-class-pattern */
 
-.dark .hiw-card--accent .hiw-card__icon {
+.dark .hiw-card:hover .hiw-card__icon {
       color: var(--white);
     }
 
