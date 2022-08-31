@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "openclassrooms web dev course's third project",
   "main": "index.html",
+  "homepage": "https://edbriand.github.io/Ohmyfood",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently --kill-others \"npm run postcss:watch\" \"npm run live\"",

@@ -1,5 +1,5 @@
 const fs = require("fs-extra");
-const DIST_FOLDER = "docs";
+const DIST_FOLDER = "dist";
 const autoprefixer = require("autoprefixer");
 const postcss = require("postcss");
 const postcssNested = require("postcss-nested");
