@@ -132,4 +132,4 @@ dist
 # postcss output
 src/index.css
 
-docs
+dist
