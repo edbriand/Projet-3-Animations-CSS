@@ -6,13 +6,13 @@ const postcssNested = require("postcss-nested");
 const postcssImport = require("postcss-import");
 
 function build() {
-  // Créer un dossier docs
+  // Créer un dossier dist
   if (!fs.existsSync(DIST_FOLDER)) {
     fs.mkdirSync(DIST_FOLDER);
   }
   // Copier les fichiers de distribution
   fs.copySync("src", DIST_FOLDER);
-  // Executer le build postCSS et l'injecter dans docs
+  // Executer le build postCSS et l'injecter dans dist
   fs.readFile(`${DIST_FOLDER}/styles/style.css`, (err, css) => {
     postcss([autoprefixer, postcssNested, postcssImport])
       .process(css, {
